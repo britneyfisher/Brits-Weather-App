@@ -16,19 +16,26 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
         <h1>Brandon, Mississippi ☀️</h1>
         <ul>
           <li>Friday 5:00 pm</li>
           <li>Clear Blue Skies</li>
         </ul>
+        </div>
         <div class="row">
           <div class="col-md-6">
+            <div class="clearfix weather-temperature">
             <img
               src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
               alt="clear"
+              class="float-left"
             />
-            75°F°C
+            <div class="float-left"><strong>75</strong><span class="units">°C | <a href="#">°F</a></span>
+            </div>
+            </div>
           </div>
           <div class="col-6">
             <ul>
@@ -38,16 +45,17 @@
             </ul>
           </div>
         </div>
-        <small>
-          <a
-            href="https://github.com/britneyfisher/Brits-Weather-App"
-            target="_blank"
-            >Open source code</a
-          >
-          by Britney Fisher
-        </small>
       </div>
+      <small>
+        <a
+          href="https://github.com/britneyfisher/Brits-Weather-App"
+          target="_blank"
+          >Open source code</a
+        >
+        by Britney Fisher
+      </small>
     </div>
+    <div class="weather-app"></div>
 
     <script src="src/app.js"></script>
   </body>
