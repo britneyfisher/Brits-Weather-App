@@ -42,7 +42,7 @@ function displayTemperature(response) {
 function search(city) {
   let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
   let query = "London";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${query}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(displayTemperature);
 }
 
